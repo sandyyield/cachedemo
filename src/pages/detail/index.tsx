@@ -20,7 +20,7 @@ export const Detial = () => {
         <div className={styles.box}>
             <div className={styles.module}>
                 <p className={styles.title}>标题</p>
-                <p className={styles.txt}>X1 TURBO ZAHA产品图-不带背景-不带效果X1 TURBO ZAHA产品图-不带背景-不带效果</p>
+                <p className={styles.txt}>-不带背景-不带效果</p>
             </div>
             <div className={styles.module}>
                 <p className={styles.title}>缩略图</p>

@@ -3,35 +3,7 @@ import React, { FC } from 'react'
 import styles from './index.module.scss'
 
 
-const demo = [
-    {
-        url: 'https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png',
-        txt: 'X1 TURBO 相关ID产品图片X1 TURBO 相关ID产品图片',
-        time: '2023-02-26 19:34:43',
-        tags: [
-            { t: 'X1 TURBO' },
-            { t: '产品ZAHA图' }
-        ]
-    },
-    {
-        url: 'https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png',
-        txt: 'X1 TURBO 相关ID产品图片X1 TURBO 相关ID产品图片',
-        time: '2023-02-26 19:34:43',
-        tags: [
-            { t: 'X1 TURBO' },
-        ]
-    },
-    {
-        url: 'https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png',
-        txt: 'X1 TURBO 相关ID产品图片X1 TURBO 相关ID产品图片',
-        time: '2023-02-26 19:34:43',
-        tags: [
-            { t: 'X1 TURBO' },
-            { t: 'X1 TURBO' }
-        ]
-    }
-]
-
+const demo: any[] = []
 const Tag: FC<{ t: string }> = ({ t }) => {
     return (
         <div className={styles.tag}>
@@ -55,7 +27,7 @@ export const Result: FC<{ list: any[] }> = ({ list }) => {
                             </div>
                             <div className={styles.context}>
                                 <div className={styles.tagdiv}>
-                                    {item.tags?.map((i, key) => <Tag key={key} t={i.t} />)}
+                                    {item.tags?.map((i: { t: string }, key: React.Key | null | undefined) => <Tag key={key} t={i.t} />)}
                                 </div>
                                 <div className={styles.time}>
                                     <p>
