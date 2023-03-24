@@ -1,0 +1,155 @@
+.box {
+    margin-top: 32px;
+
+    .suffixbtn {
+        width: 30%;
+        color: red;
+        border-radius: 6px;
+        // box-sizing: border-box;
+        display: inline-block
+    }
+
+    .suffix {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+
+
+        min-width: 100px;
+        height: 68px;
+    }
+
+    .serchicon {
+        margin-right: 2px;
+        width: 20px;
+
+    }
+
+    .input {
+        background: #F3F4F8;
+    }
+
+    .btn {
+        background: #025DB6;
+        height: 44px;
+    }
+}
+
+.result {
+    margin-top: 32px;
+    width: 100%;
+
+    .line {
+        height: 1px;
+        border-top: solid #EEEEEE 1px;
+        margin: 16px 0;
+    }
+
+    .li {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        gap: 24px;
+
+
+        img {
+            width: 100%;
+        }
+
+        .left {
+            width: 120px;
+            min-width: 120px;
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 6px 0;
+
+            .title {
+                font-weight: 600;
+                color: #1B384F;
+                font-size: 14px;
+            }
+
+            .context {
+                .tagdiv {
+                    display: flex;
+                    gap: 8px
+                }
+
+                .time {
+                    margin-top: 28px;
+
+                    p {
+                        font-size: 12px;
+                        color: #999999;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.tag {
+    background: #F3F4F8;
+    height: 20px;
+    border-radius: 4px;
+
+    p {
+        margin: 0;
+        font-size: 12px;
+        color: #999999;
+        padding: 2px 8px;
+    }
+}
+
+.pagination {
+    width: 100%;
+    text-align: center;
+    margin-top: 8px; //因为上面也有16px
+
+}
+
+:global {
+    .ant-pagination-prev:first-child {
+        border-radius: 0;
+        background-color: white;
+        border: 1px dashed black
+    }
+
+    .ant-pagination-next {
+        border-radius: 0 !important;
+        background-color: white;
+        border: 1px dashed black;
+
+        button {
+            border-radius: 0 !important;
+            border: 1px dashed black;
+        }
+    }
+
+    .ant-pagination-item-active {
+        background: #025DB6 !important;
+
+        a {
+            color: rgba(255, 255, 255, 0.9) !important;
+            border: 0 !important;
+            border-radius: 3px !important;
+        }
+    }
+
+    .ant-pagination-item {
+        a{
+
+            border-radius: 3px;
+            border: 1px solid #DCDCDC;
+        }
+
+    }
+}
